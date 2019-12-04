@@ -144,3 +144,13 @@ print("Next year, you will be {}".format(age + 1))
 # Funny things in python
 number = str(5)  # This is "5"
 print(str(5) + str(8))
+
+# Rounding
+cost = 13.9685
+print("The cost is {:.2f}".format(cost))
+print("The cost is {:.3f}".format(cost))
+
+# -------
+second_number = int(input("adfhlasdfh"))
+print("Your age is {}".format(age))
+print("you typed in {}".format(username))
