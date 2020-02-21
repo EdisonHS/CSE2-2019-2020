@@ -86,4 +86,45 @@ add_stuff(5, 7)
 
 
 def subtract(num1, num2):
-    
+    print("SUBTRACTING {} and {}".format(num1, num2))
+    return num1 - num2
+
+
+age = subtract(10, 5)
+
+
+def f(x):
+    return x**2 + 3*x + 9
+
+
+print(f(3))
+print(f(9))
+print(f(27))
+
+
+def divisible_by_2(number):
+    if number % 2 == 0:
+        return True
+    return False
+
+
+# Nothing will be executed as soon as I get to
+# a "Return" statement
+
+def divisible_by_7(number):
+    return number % 7 == 0
+
+
+for i in range(1000):
+    if divisible_by_2(i) and divisible_by_7(i):
+        print(i)
+
+
+def can_i_sleep_in(weekday, vacation):
+    """If it is vacation, I can sleep in.
+    If it is not a weekday, I can sleep in"""
+    if vacation:
+        return True
+    elif not weekday:
+        return True
+    return False
